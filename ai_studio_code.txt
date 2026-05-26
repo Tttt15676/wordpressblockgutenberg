@@ -1,0 +1,26 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "custom/my-custom-block",
+  "version": "1.0.0",
+  "title": "Announcement",
+  "category": "text",
+  "icon": "megaphone",
+  "attributes": {
+    "heading": {
+      "type": "string",
+      "source": "html",
+      "selector": "h2"
+    },
+    "content": {
+      "type": "string",
+      "source": "html",
+      "selector": "p"
+    },
+    "linkUrl": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "editorScript": "file:./index.js"
+}
