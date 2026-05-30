@@ -6,6 +6,7 @@
   "title": "Announcement",
   "category": "text",
   "icon": "megaphone",
+  "textdomain": "my-custom-block",
   "attributes": {
     "heading": {
       "type": "string",
@@ -22,5 +23,11 @@
       "default": ""
     }
   },
-  "editorScript": "file:./index.js"
+  "supports": {
+    "html": false,
+    "align": true
+  },
+  "editorScript": "file:./build/index.js",
+  "editorStyle": "file:./build/index.css",
+  "style": "file:./build/style-index.css"
 }
